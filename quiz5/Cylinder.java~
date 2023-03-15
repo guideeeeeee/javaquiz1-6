@@ -1,0 +1,6 @@
+public class Cylinder{
+  public final double Pi = 3.14;
+  private double radius,height;
+  
+}
+

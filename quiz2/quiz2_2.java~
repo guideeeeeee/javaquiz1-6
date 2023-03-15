@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class quiz2_2{
+  public static void main(String[]args){
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter r1's center x,y-coordinates, width, and height :");
+    int x1 = sn.nextInt();
+    int y1 = sn.nextInt();
+    double widht1 = sn.nextDouble();
+    double height1 = sn.nextDouble();
+    System.out.print("Enter r2's center x,y-coordinates, width, and height :");
+    int x2 = sn.nextInt();
+    int y2 = sn.nextInt();
+    double widht2 = sn.nextDouble();
+    double height2 = sn.nextDouble();
+    if((x1 > x2) || (y1 > y2)){
+      if(((x1+(widht1*0.5)) > (x2+(widht2*0.5))) && ((y1+(height1*0.5)) > (y2+(height2*0.5)))){
+        System.out.println("r2 is inside r1");
+      }
+      else{
+        System.out.println("r2 overlaps r1");  
+      }
+    }
+    else
+      System.out.println("r2 dose not overlaps r1");
+    
+    
+  }
+}
